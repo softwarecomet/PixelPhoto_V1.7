@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ <PreferenceCategory android:title="@string/Lbl_ReceiveNotifications" >
+
+    <!--Liked my post-->
+    <android.support.v7.preference.SwitchPreferenceCompat
+      android:title="@string/Lbl_LikedMyPost"
+      android:key="LikedMyPost_key"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <!--Commented on my post-->
+    <android.support.v7.preference.SwitchPreferenceCompat
+      android:title="@string/Lbl_CommentedMyPost"
+      android:key="CommentedMyPost_key"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <!--Followed me-->
+    <android.support.v7.preference.SwitchPreferenceCompat
+      android:title="@string/Lbl_FollowedMe"
+      android:key="FollowedMe_key"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <!--Mentioned me-->
+    <android.support.v7.preference.SwitchPreferenceCompat
+      android:title="@string/Lbl_MentionedMe"
+      android:key="MentionedMe_key"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+  </PreferenceCategory>
+</PreferenceScreen>

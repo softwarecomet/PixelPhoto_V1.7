@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# IDE0068: Use recommended dispose pattern
+dotnet_diagnostic.IDE0068.severity = none
+
+# IDE0067: Dispose objects before losing scope
+dotnet_diagnostic.IDE0067.severity = none

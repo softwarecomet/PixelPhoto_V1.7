@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:paddingBottom ="5dp"
+	 android:paddingTop ="5dp"
+	
+   >
+
+	  <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+			<ImageView
+				android:id="@+id/userAvatar"
+				android:scaleType="centerCrop"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginStart="11dp"
+				android:layout_marginTop="5dp" 
+				android:src="@drawable/no_profile_image_circle"
+		         />
+			<TextView
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="12dp"
+				android:layout_toEndOf="@id/userAvatar"
+				
+				android:textSize="13sp"
+				android:maxLines="1"
+				android:lines="1"
+				android:layout_centerVertical="true" />
+			<TextView
+				android:id="@+id/Typepost"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="7dp"
+				android:layout_toEndOf="@id/username"
+				android:text="@string/Lbl_Gif"
+				android:textColor="#483d8b"
+				android:textSize="14sp"
+				android:maxLines="1"
+				android:lines="1"
+				android:layout_centerVertical="true" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/custom_ripple_greylight"
+				android:id="@+id/moreicon"
+				android:textSize="20sp"
+				android:layout_marginStart="0dp"
+				android:layout_marginEnd="14dp"
+				android:maxLines="1"
+				android:lines="1"
+				android:layout_centerVertical="true"
+				android:tag="false"
+				android:paddingTop="0dp"
+				android:paddingStart="4dp"
+				android:paddingEnd="2dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:text=":"
+				android:textColor="@color/count_color"
+				android:layout_alignParentEnd="true"
+				android:rotation="90" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/time_text"
+				android:textSize="10sp"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="5dp"
+				android:layout_marginEnd="7dp"
+				android:maxLines="1"
+				android:lines="1"
+				android:tag="false"
+				android:paddingTop="0dp"
+				android:paddingStart="17dp"
+				android:paddingEnd="1dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:textColor="@color/count_color"
+				android:layout_alignParentEnd="false"
+				android:layout_toStartOf="@id/moreicon" />
+		</RelativeLayout>
+
+		 <ImageView
+        android:id="@+id/ImageDisplay"
+       
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+        android:layout_marginBottom="0dp"
+      android:scaleType ="centerCrop"
+			android:minHeight="200dp"
+			android:maxHeight="350dp"
+		android:src="@drawable/Cover_image"
+        android:layout_marginTop="0dp" />
+
+	   <RelativeLayout
+			android:layout_width="match_parent"
+		
+			android:layout_height="43dp"
+			android:gravity="center">
+			<TextView
+				android:id="@+id/Like"
+				android:background="@drawable/custom_ripple"
+				android:layout_width="30dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="12dp"
+				android:text="[ ]"	
+				android:maxLines="1"
+				android:lines="1"
+				
+				android:textSize="28sp"
+				android:layout_centerVertical="true"
+				android:gravity="center" />
+		<TextView
+				android:layout_width="35dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/fav"
+				android:background="@drawable/custom_ripple_yellow"
+				android:maxLines="1"
+				android:lines="1"
+				android:textSize="27sp"
+				android:layout_marginStart="9dp"
+				android:layout_marginEnd="16dp"
+				android:layout_centerVertical="true"
+				android:tag="false"
+				android:paddingTop="0dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:text="Fav"
+				android:gravity="center"
+				android:textColor="@color/text_color_in_between"
+				android:layout_alignParentEnd="true"
+				 />
+			<TextView
+				android:layout_width="35dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/share"
+				android:maxLines="1"
+				android:lines="1"
+				android:textSize="27sp"
+				android:layout_marginStart="9dp"
+				android:layout_marginEnd="0dp"
+				android:layout_centerVertical="true"
+				android:tag="false"
+				android:paddingTop="0dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:text="@string/Lbl_Share"
+				android:gravity="center"
+				android:textColor="@color/text_color_in_between"
+				android:layout_toStartOf="@id/fav"
+				
+				 />
+			<TextView
+				android:layout_width="35dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/Comment"
+				android:textSize="30sp"
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:background="@drawable/custom_ripple_grey"
+				android:layout_marginStart="55dp"
+				android:layout_marginEnd="0dp"
+				android:maxLines="1"
+				android:lines="1"
+				android:tag="false"
+				android:paddingTop="0dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:text="{}"
+				
+				android:layout_alignParentEnd="false"
+				android:layout_toStartOf="@id/moreicon" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			
+			android:layout_height="25dp"
+			android:gravity="center|start">
+			<TextView
+				android:id="@+id/Likecount"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginStart="12dp"
+				android:textColor="@color/count_color"
+				android:textSize="13sp"
+				android:maxLines="1"
+				android:lines="1"
+				android:layout_centerVertical="true"
+				android:gravity="center" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/Commentcount"
+				android:textSize="13sp"
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:layout_marginStart="13dp"
+				android:layout_marginEnd="0dp"
+				android:tag="false"
+				android:maxLines="1"
+				android:lines="1"
+				android:paddingTop="0dp"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:textColor="@color/count_color"
+				android:layout_alignParentEnd="false"
+				android:layout_toEndOf="@id/Likecount" />
+		</RelativeLayout>
+		<com.luseen.autolinklibrary.AutoLinkTextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/description"
+			android:textSize="13sp"
+			android:layout_centerVertical="true"
+			android:gravity="center|start"
+			android:layout_marginStart="11dp"
+			android:layout_marginEnd="0dp"
+			android:paddingTop="5dp"
+			
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/ViewMoreComment"
+			android:textSize="13sp"
+			android:maxLines="1"
+				android:lines="1"
+			android:layout_centerVertical="true"
+			android:gravity="center|start"
+			android:layout_marginStart="11dp"
+			android:layout_marginEnd="0dp"
+			android:paddingTop="5dp"
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			android:text="@string/Lbl_ShowMoreComments"
+			android:textColor="@color/count_color"/>
+</LinearLayout>
+	
+
+ 
+</LinearLayout>

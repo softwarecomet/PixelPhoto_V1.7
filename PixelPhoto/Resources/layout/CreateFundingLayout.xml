@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+	 android:background="?attr/colorPrimary"
+    android:layout_height="match_parent">
+	 <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     app:titleTextAppearance="@style/Toolbar.TitleText"
+                     android:background="@drawable/linear_gradient_drawable"  >
+					<TextView
+						android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Lbl_Submit"
+                        android:layout_gravity="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        
+                        android:layout_marginEnd="12dp"
+                        android:id="@+id/toolbar_title" />
+				</android.support.v7.widget.Toolbar>	
+			  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingBottom="1dp">
+                <ImageView
+                    android:id="@+id/fundingCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/Cover_image"
+                    android:scaleType="centerCrop" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:background="@xml/gradientblack"
+					android:gravity="center">
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="25dp"
+						android:id="@+id/btn_selectimage"
+						android:textSize="12sp"
+						android:layout_centerHorizontal="true"
+						android:layout_marginStart="15dp"
+						android:layout_marginEnd="15dp"
+						android:paddingTop="2dp"
+						android:paddingBottom="2dp"
+						android:background="@drawable/follow_button_profile_friends"
+						android:tag="false"
+						android:paddingStart="17dp"
+						android:paddingEnd="17dp"
+						android:textAlignment="center"
+						android:textAllCaps="false"
+						android:text="@string/Lbl_SelectImage"
+						android:textColor="@color/textLight_color"
+						android:layout_marginTop="7dp"
+						android:gravity="center"
+						android:layout_gravity="center|center_vertical" />
+				</LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f9f9f9"
+                android:paddingBottom="20dp">
+            <!--Buttons Section-->             
+                <LinearLayout
+                    android:id="@+id/layout_suggestion_Friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/center_content_profile_scroll_over"
+                    android:orientation="vertical">
+				 <EditText
+						android:id="@+id/fundingname"
+                        android:layout_below="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/create_border_edit_text"
+                        android:hint="@string/Lbl_Title"
+                        android:padding="12dp"
+                        
+                        android:textColorHint="#b7b7b7"
+                        android:textSize="14sp" /> 
+					<EditText
+						android:id="@+id/fundingAmount"
+                        android:layout_below="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/create_border_edit_text"
+                        android:hint="@string/Lbl_Amount"
+                        android:padding="12dp"
+                        
+                        android:textColorHint="#b7b7b7"
+                        android:textSize="14sp" /> 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="2dp"
+					android:paddingBottom="0dp"
+                    android:background="@drawable/center_content_profile_scroll_over"
+                    android:orientation="vertical">
+					<EditText
+						android:id="@+id/description"
+						android:layout_width="match_parent"
+						android:layout_height="122.3dp"
+						android:layout_below="@+id/emailet"
+						android:layout_marginEnd="10dp"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="10dp"
+						android:background="@drawable/create_border_edit_text"
+						android:hint="@string/Lbl_Description"
+						android:scrollHorizontally="false"
+						android:maxLines="10"
+						android:textAllCaps="false"
+						android:inputType="textMultiLine"
+						android:padding="12dp"
+						
+						android:textColorHint="#b7b7b7"
+						android:textSize="14sp"
+						android:gravity="top" />
+                </LinearLayout>
+            </LinearLayout>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

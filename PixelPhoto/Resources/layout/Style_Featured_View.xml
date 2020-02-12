@@ -1,0 +1,61 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="1dp"
+    android:paddingEnd="1dp"
+	android:minHeight="100dp"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    android:gravity="center|center_horizontal"
+    android:foregroundGravity="center">
+
+	<FrameLayout
+		android:id="@+id/viewfrm"
+        android:layout_centerVertical="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/custom_ripple"
+       >
+    <ImageView
+        android:id="@+id/Image"
+	    android:transitionName="sharedImage"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:adjustViewBounds="true"
+        android:focusable="true"
+        android:clickable="false"
+        android:gravity="center"
+        android:layout_centerVertical="false" />
+    </FrameLayout>
+	<TextView   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:id="@+id/typeicon"
+        android:textSize="18sp"
+		android:text="@string/Lbl_ViewMore"
+        android:focusable="false"
+        android:clickable="false"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="5dp"
+		android:textColor="@color/white"
+		android:visibility="gone" 
+		android:textStyle="bold"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/playicon"
+		android:textSize="26sp"
+		android:text="P"
+	    android:textColor="@color/white"
+        android:focusable="false"
+        android:clickable="false"
+		android:layout_marginStart="3dp"
+		android:layout_marginTop="3dp"
+		android:layout_centerInParent="true"
+		android:visibility="gone" />
+
+</RelativeLayout>
